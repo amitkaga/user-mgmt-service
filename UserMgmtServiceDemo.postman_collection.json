@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "82c950cf-b41a-4fed-9813-7da9c67199de",
+		"name": "UserMgmtServiceDemo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/user-mgmt-service/users/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n    \"userName\": \"Amit\",\r\n    \"userFullName\": \"Amit Kumar Agarwala\",\r\n    \"userAge\": 39,\r\n    \"userAddress\": \"Whitefield\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/user-mgmt-service/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"user-mgmt-service",
+						"users",
+						""
+					]
+				},
+				"description": "Add new user list"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/user-mgmt-service/users/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n    \"userId\": 1\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/user-mgmt-service/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"user-mgmt-service",
+						"users",
+						""
+					]
+				},
+				"description": "Fetch the list of users for given ids"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"userId\": 1,\r\n        \"userName\": \"amit\",\r\n        \"userFullName\": \"Amit Kumar\",\r\n        \"userAge\": 38,\r\n        \"userAddress\": \"Whitefield\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/user-mgmt-service/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"user-mgmt-service",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"userId\": 1\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/user-mgmt-service/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"user-mgmt-service",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
